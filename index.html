@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ipês de Inhambu | Chácaras de 1.000 m² entre Tiradentes e São João del-Rei</title>
+<meta name="description" content="Chácaras de 1.000 m² em projeto 100% regularizado, a 7 km de Tiradentes e 13 km de São João del-Rei. Agende uma visita.">
+<link rel="icon" type="image/png" href="imagens/favicon.png">
+<meta name="theme-color" content="#0d2a15">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Ipês de Inhambu | Chácaras de 1.000 m² entre Tiradentes e São João del-Rei">
+<meta property="og:description" content="Projeto 100% regularizado, escritura garantida e financiamento direto em até 120 meses. Agende sua visita.">
+<meta property="og:image" content="imagens/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#0d2a15; --verde-medio:#264434; --creme:#fcf6cf; --ouro:#c9a745; --texto:#5a5a52;
+  --display:'Playfair Display',Georgia,serif; --corpo:'Poppins',Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+h1,h2,h3,h4{font-variant-numeric:lining-nums;text-wrap:balance}
+p{text-wrap:pretty}
+html{scroll-behavior:smooth}
+section,.contatos{scroll-margin-top:70px}
+body{background:var(--creme);color:var(--verde);font-family:var(--corpo);font-size:17px;line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--ouro);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;background:var(--ouro);color:var(--verde);font:500 18px var(--corpo);padding:15px 38px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s,background .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.btn:active{transform:none}
+.ouro{color:var(--ouro)}
+
+/* ---------- HOME ---------- */
+.hero{position:relative;color:#fff;text-align:center;min-height:clamp(620px,92svh,820px);display:flex;flex-direction:column;justify-content:center;
+  background:linear-gradient(rgba(30,58,40,.78),rgba(30,58,40,.78)),url("imagens/hero.jpg") center/cover,#2b4a35;
+  border-radius:0 0 clamp(50px,8vw,130px) clamp(50px,8vw,130px);padding:130px 0 90px}
+header{position:fixed;top:0;left:0;right:0;z-index:20;transition:background .25s,box-shadow .25s}
+header.rolou{background:rgba(13,42,21,.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);box-shadow:0 2px 16px rgba(0,0,0,.25)}
+header.rolou .wrap{padding-top:10px;padding-bottom:10px}
+header.rolou .logo img{width:104px}
+header .wrap{max-width:1300px;display:flex;justify-content:space-between;align-items:center;padding-top:26px;gap:20px;flex-wrap:wrap}
+.logo img{width:clamp(120px,13vw,175px)}
+nav{display:flex;gap:clamp(18px,3.4vw,52px);font-size:16px;font-weight:500}
+nav a{text-decoration:none;padding-bottom:4px;border-bottom:2px solid transparent}
+nav a.ativo{border-color:var(--ouro)}
+nav a:not(.cta):hover{border-color:rgba(201,167,69,.6)}
+nav a.cta,nav a.cta.ativo{background:var(--ouro);color:var(--verde);padding:8px 22px;border:0;border-radius:999px;font-weight:600}
+nav a.cta:hover{background:#d8b753}
+.hero h1{font:500 clamp(32px,4.6vw,56px)/1.1 var(--display);margin-bottom:30px}
+.hero p{max-width:62ch;margin:0 auto 38px;font-size:clamp(16px,1.6vw,19px)}
+.hero p b{font-weight:600}
+
+/* ---------- DIFERENCIAIS ---------- */
+.dif{padding:90px 0 100px;text-align:center;position:relative}
+.dif .eyebrow{font-weight:500;font-size:20px}
+h2.display{font:500 clamp(32px,4.4vw,52px)/1.15 var(--display);margin-bottom:56px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:40px 36px;max-width:960px;margin:0 auto;text-align:left}
+.card{background:#fff;border-radius:8px;padding:34px 26px;box-shadow:0 4px 18px rgba(60,50,10,.1)}
+.card svg{width:56px;height:56px;padding:12px;margin:0 0 18px;background:rgba(201,167,69,.2);border-radius:50%;stroke:var(--verde);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font:500 20px/1.3 var(--corpo);color:var(--verde);margin-bottom:10px}
+.card p{font-size:15px;color:var(--texto);text-align:left;line-height:1.55}
+.pontos{position:absolute;width:90px;height:110px;background-image:radial-gradient(#9fdcae 3px,transparent 3.5px);background-size:20px 20px;opacity:.8}
+.pontos.a{left:5%;top:38%}.pontos.b{right:6%;bottom:12%}
+.cta-centro{margin-top:48px;text-align:center}
+
+/* ---------- SOBRE ---------- */
+.sobre{background:var(--verde-medio);color:#fff;position:relative;overflow:hidden}
+.sobre .grid{display:grid;grid-template-columns:1fr 1fr;min-height:560px;align-items:center}
+.sobre .txt{padding:70px 0 70px max(24px,calc((100vw - 1300px)/2 + 24px));padding-right:40px;position:relative;z-index:2}
+.sobre h2{font:600 clamp(36px,4.4vw,56px)/1.1 var(--corpo);margin-bottom:22px}
+.sobre h2 span{display:block;font:500 clamp(36px,4.4vw,58px)/1.1 var(--display);color:var(--ouro)}
+.sobre p{margin-bottom:30px;font-size:17px;max-width:46ch}
+.sobre p b{font-weight:600}
+.sobre p .ouro{font-weight:600}
+.sobre .foto{align-self:stretch;min-height:340px;background:url("imagens/sobre.jpg") center/cover,#4b6a4a;
+  -webkit-mask-image:linear-gradient(to right,transparent,#000 40%);mask-image:linear-gradient(to right,transparent,#000 40%)}
+
+/* ---------- MAPA ---------- */
+.acoes{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.btn.sec{background:transparent;color:#fff;border:2px solid var(--ouro);padding:13px 36px}
+.btn.sec:hover{background:rgba(201,167,69,.18)}
+.hero p.sel{display:flex;gap:8px 26px;justify-content:center;flex-wrap:wrap;margin:36px auto 0;font-size:15px;font-weight:500;max-width:none}
+.sel span::before{content:"✓ ";color:var(--ouro)}
+.proj{padding:90px 0 40px;text-align:center}
+.proj .intro{max-width:62ch;margin:-30px auto 40px;color:var(--texto);font-size:16px}
+.proj figure{margin:0}
+.proj figcaption{font-size:14px;color:var(--texto);margin-top:10px}
+.gif{max-width:1000px;margin:0 auto 70px}
+.gif img{width:100%;height:auto;border-radius:12px;box-shadow:0 10px 34px rgba(60,50,10,.22);background:var(--verde-medio)}
+.zoom img{width:100%;height:auto;mix-blend-mode:multiply}
+.mapa .wrap{max-width:1300px}
+.dois figure:last-child{max-width:820px;margin:0 auto}
+.mapa{padding:20px 0 90px}
+.mapa h3{font:500 clamp(30px,4vw,44px)/1.1 var(--display);margin-bottom:28px}
+.dois{display:grid;grid-template-columns:1fr;gap:64px;align-items:start}
+.zoom{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;position:relative}
+.zoom::after{content:"Ampliar";position:absolute;right:12px;bottom:12px;background:var(--verde);color:var(--ouro);font-size:13px;font-weight:600;padding:5px 14px;border-radius:999px}
+dialog#lb{border:0;background:transparent;max-width:96vw;max-height:94vh;overflow:auto;margin:auto}
+dialog#lb::backdrop{background:rgba(8,20,12,.88)}
+#lb img{max-width:none;width:min(1400px,94vw);border-radius:8px}
+#lb .x{position:fixed;top:16px;right:16px;z-index:9;width:46px;height:46px;border-radius:50%;border:0;background:var(--ouro);color:var(--verde);font-size:26px;cursor:pointer}
+
+
+/* ---------- PLANTA INTERATIVA ---------- */
+.pl{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:28px;align-items:start;text-align:left}
+.pl-topo{display:flex;flex-wrap:wrap;gap:12px 20px;justify-content:space-between;align-items:center;margin-bottom:14px}
+.pl-busca{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:500}
+.pl-busca input{width:96px;font:inherit;font-size:16px;padding:9px 14px;border:2px solid #d9d4b8;border-radius:999px;background:#fffdf3;color:var(--verde)}
+.pl-busca input:focus{border-color:var(--verde);outline:none;box-shadow:0 0 0 3px rgba(201,167,69,.45)}
+.pl-busca .msg{font-size:13px;color:#a12a1b;font-weight:500}
+.pl-zoom{display:flex;gap:8px;align-items:center}
+.pl-zoom button{width:42px;height:42px;border-radius:50%;border:0;background:var(--verde);color:var(--ouro);font:600 22px/1 var(--corpo);cursor:pointer;transition:transform .15s,background .15s}
+.pl-zoom button:hover{transform:translateY(-1px);background:var(--verde-medio)}
+.pl-zoom button:disabled{opacity:.4;cursor:default;transform:none}
+.pl-vista{position:relative;overflow:hidden;border-radius:14px;background:#fff;box-shadow:0 10px 34px rgba(60,50,10,.2);touch-action:pan-y;user-select:none;-webkit-user-select:none}
+.pl-vista.zoomed{touch-action:none;cursor:grab}
+.pl-vista.arrasta{cursor:grabbing}
+.pl-palco{position:relative;transform-origin:0 0;will-change:transform}
+.pl-palco img{width:100%;height:auto;display:block;pointer-events:none}
+.pl-palco svg{position:absolute;inset:0;width:100%;height:100%}
+.lote{cursor:pointer;outline:none}
+.lote polygon{fill:rgba(201,167,69,.10);stroke:rgba(252,246,207,.4);stroke-width:1.2;vector-effect:non-scaling-stroke;stroke-linejoin:round;transition:fill .15s,stroke .15s}
+.lote:hover polygon,.lote:focus-visible polygon{fill:rgba(201,167,69,.6);stroke:#fcf6cf;stroke-width:2.5}
+.lote.sel polygon{fill:rgba(201,167,69,.85);stroke:#fff;stroke-width:3.5}
+.lote.inst polygon{fill:rgba(255,255,255,0);stroke:rgba(255,255,255,0)}
+.lote.inst:hover polygon,.lote.inst:focus-visible polygon,.lote.inst.sel polygon{fill:rgba(255,255,255,.28);stroke:#fff}
+.lote.reservado polygon{fill:rgba(230,140,40,.5)}
+.lote.vendido polygon{fill:rgba(150,35,25,.55);stroke:rgba(255,255,255,.3)}
+.lote.vendido:hover polygon,.lote.reservado:hover polygon{stroke:#fff;stroke-width:2.5}
+.pl-dica{font-size:13px;color:var(--texto);margin-top:10px;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center}
+.pl-leg{display:inline-flex;align-items:center;gap:7px}
+.pl-leg i{width:14px;height:14px;border-radius:4px;background:rgba(201,167,69,.75);border:1px solid rgba(13,42,21,.35)}
+.pl-leg.reservado i{background:rgba(230,140,40,.8)}.pl-leg.vendido i{background:rgba(150,35,25,.8)}
+.pl-info{background:var(--verde);color:#fff;border-radius:16px;padding:28px 26px;box-shadow:0 10px 34px rgba(60,50,10,.22);position:sticky;top:84px}
+.pl-info .vazio{color:#d6dccf;font-size:15px;line-height:1.55}
+.pl-info .vazio b{display:block;font:500 26px/1.15 var(--display);color:var(--ouro);margin-bottom:10px}
+.pl-info .eyebrow{font-size:14px;font-weight:500;color:#d6dccf;margin-bottom:2px}
+.pl-info .num{font:500 clamp(46px,6vw,64px)/1 var(--display);color:var(--ouro);margin-bottom:14px}
+.pl-info .num.pequeno{font-size:clamp(30px,3.6vw,38px);line-height:1.1}
+.pl-info .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.pl-info .chip{font-size:13px;font-weight:600;padding:5px 14px;border-radius:999px;background:rgba(255,255,255,.12)}
+.pl-info .chip.ok{background:var(--ouro);color:var(--verde)}
+.pl-info .chip.reservado{background:#e68c28;color:var(--verde)}
+.pl-info .chip.vendido{background:#963323;color:#fff}
+.pl-info p{font-size:15px;color:#d6dccf;margin-bottom:20px;line-height:1.55}
+.pl-info .acoes-lote{display:grid;gap:10px}
+.pl-info .btn{text-align:center;font-size:16px;padding:13px 24px;width:100%}
+.pl-info .btn.sec{padding:11px 24px;font-size:15px}
+.pl-info .btn[disabled]{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
+@media(max-width:980px){
+  .pl{grid-template-columns:1fr}
+  .pl-info{position:static}
+}
+
+/* ---------- FAMILIA + CONTATO ---------- */
+.contatos{position:relative;margin-top:-60px}
+.familia{display:flex;justify-content:center;align-items:flex-end;padding:clamp(260px,32vw,480px) 20px 56px;background:linear-gradient(var(--creme),transparent 22%),url("imagens/familia.jpg") center/cover,#5d6b2d}
+.caixa{width:min(1000px,100%);background:var(--ouro);border-radius:16px;padding:40px;display:grid;grid-template-columns:1fr 1.1fr;gap:36px;align-items:center;color:var(--verde);box-shadow:0 18px 50px rgba(0,0,0,.28)}
+.caixa .tag{display:inline-block;background:var(--verde);color:var(--ouro);font-weight:600;font-size:13px;padding:5px 14px;border-radius:999px;margin-bottom:14px}
+.caixa h3{font:500 clamp(32px,3.8vw,44px)/1.1 var(--display);margin-bottom:12px}
+.caixa p{font-size:16px;line-height:1.55}
+.vantagens{list-style:none;margin-top:20px;display:grid;gap:12px;font-weight:500;font-size:15px}
+.vantagens li{display:flex;gap:10px;align-items:flex-start}
+.vantagens svg{flex:none;width:22px;height:22px;stroke:var(--verde);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;margin-top:1px}
+.cad{background:#fff;border-radius:12px;padding:26px;display:grid;gap:14px}
+.cad label{font-weight:600;font-size:14px;display:grid;gap:5px}
+.cad input[type=text],.cad input[type=tel],.cad input[type=email],.cad select{font:inherit;font-size:16px;padding:12px 14px;border:2px solid #d9d4b8;border-radius:8px;background:#fffdf3;color:var(--verde);width:100%}
+.cad input:focus,.cad select:focus{border-color:var(--verde);outline:none;box-shadow:0 0 0 3px rgba(201,167,69,.45)}
+.cad input[aria-invalid=true]{border-color:#a12a1b;background:#fff6f4}
+.cad .aceite input[aria-invalid=true]{outline:2px solid #a12a1b;outline-offset:2px}
+.cad .micro{font-size:12.5px;line-height:1.4;color:var(--texto);text-align:center}
+.cad .duas{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.cad .aceite{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:13px;line-height:1.4;color:var(--texto)}
+.cad .aceite input{margin-top:2px;width:18px;height:18px;accent-color:var(--verde);flex:none}
+.cad .btn{background:var(--verde);color:#fff;width:100%;text-align:center}
+.cad .erro{color:#a12a1b;font-size:14px;font-weight:500}
+.cad .erro:empty{display:none}
+.ok{display:none;text-align:center;padding:36px 26px}
+.ok h4{font:500 34px/1.1 var(--display);margin-bottom:10px}
+.ok p{margin-bottom:20px;color:var(--texto)}
+
+footer{background:var(--verde);color:#fff;padding:70px 0 40px;position:relative;overflow:hidden}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;position:relative;z-index:2}
+.marcas{display:flex;gap:40px;align-items:center;flex-wrap:wrap}
+.marcas img{height:90px;width:auto}
+.insta{display:flex;align-items:center;gap:10px;margin-top:18px;font-weight:600;text-decoration:none}
+.insta svg{width:30px;height:30px;stroke:var(--ouro);fill:none;stroke-width:1.6}
+footer h4{color:var(--ouro);font:600 16px var(--corpo);margin-bottom:14px}
+footer ul{list-style:none;color:#b9bdb3}
+footer li{margin-bottom:6px;font-size:18px}
+footer a{text-decoration:none}
+.legal{grid-column:1/-1;display:flex;gap:40px;justify-content:flex-end;font-size:13px;margin-top:30px}
+.legal a{color:#b9bdb3;text-decoration:underline;text-underline-offset:3px}
+.legal a:hover,footer li a:hover{color:var(--ouro)}
+.blob{position:absolute;background:var(--creme);z-index:1}
+.blob.e{left:-60px;bottom:-60px;width:210px;height:300px;border-radius:0 100% 0 0}
+.blob.d{right:-70px;bottom:90px;width:150px;height:210px;border-radius:40px;transform:rotate(-28deg)}
+
+.barra{display:none}
+@media(max-width:860px){
+  .cards{grid-template-columns:1fr 1fr}
+  .sobre .grid,footer .wrap{grid-template-columns:1fr}
+  .sobre .txt{padding:60px 24px 20px}
+  .sobre .foto{-webkit-mask-image:linear-gradient(to bottom,transparent,#000 40%);mask-image:linear-gradient(to bottom,transparent,#000 40%);min-height:300px}
+  .dois{grid-template-columns:1fr}
+  .caixa{grid-template-columns:1fr;padding:26px}
+  .legal{justify-content:flex-start}
+  header .wrap{justify-content:center}
+}
+@media(max-width:560px){
+  .cards{grid-template-columns:1fr}
+  nav{gap:16px;font-size:14px}
+  .hero{padding-top:170px}
+  .cad .duas{grid-template-columns:1fr}
+  .caixa{padding:22px}
+}
+@media(max-width:700px){
+  header .wrap{justify-content:space-between;flex-wrap:nowrap;padding-top:14px}
+  nav a:not(.cta){display:none}
+  .hero{padding-top:110px;padding-bottom:70px}
+  footer{padding-bottom:110px}
+  .barra{display:block;position:fixed;left:14px;right:14px;bottom:calc(14px + env(safe-area-inset-bottom));z-index:15;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.35);transform:translateY(160%);visibility:hidden;transition:transform .25s,visibility .25s}
+  .barra.ver{transform:none;visibility:visible}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<a class="btn barra" id="barra" href="#cadastro">Agendar minha visita</a>
+
+<!-- HOME -->
+<section class="hero" id="home">
+  <header>
+    <div class="wrap">
+      <a class="logo" href="#home"><img src="imagens/logo%20png.png" alt="Ipês de Inhambu"></a>
+      <nav aria-label="Principal">
+        <a href="#home" class="ativo">Home</a>
+        <a href="#infraestrutura">Infraestrutura</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projeto">Projeto</a>
+        <a href="#mapa">Mapa</a>
+        <a href="#cadastro" class="cta">Agendar visita</a>
+      </nav>
+    </div>
+  </header>
+  <div class="wrap">
+    <h1>Sua chácara de 1.000 m² entre <span class="ouro">Tiradentes e São João del-Rei</span></h1>
+    <p>Lotes amplos em projeto <b>100% regularizado</b>, com escritura garantida e financiamento direto em até 120 meses. A 7 km de Tiradentes, <b class="ouro">o campo que a sua família quer, com a cidade por perto</b>.</p>
+    <div class="acoes">
+      <a class="btn" href="#cadastro">Agendar minha visita</a>
+      <a class="btn sec" href="#mapa">Ver mapa dos lotes</a>
+    </div>
+    <p class="sel"><span>Escritura garantida</span><span>Lotes de 1.000 m²</span><span>7 km de Tiradentes</span><span>13 km de São João del-Rei</span></p>
+  </div>
+</section>
+
+<!-- INFRAESTRUTURA -->
+<section class="dif" id="infraestrutura">
+  <span class="pontos a" aria-hidden="true"></span><span class="pontos b" aria-hidden="true"></span>
+  <div class="wrap">
+    <p class="eyebrow">Infraestrutura</p>
+    <h2 class="display">Por que escolher o Ipês de Inhambu?</h2>
+    <div class="cards">
+      <article class="card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 3v18M12 12h8"/></svg>
+        <h3>100% Regularizado</h3>
+        <p>Projeto com documentação aprovada e escritura garantida, para você comprar com segurança e tranquilidade.</p>
+      </article>
+      <article class="card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18"/><path d="M8 16l8-8M10 8h6v6M21 8h-2M21 12h-2M21 16h-2"/></svg>
+        <h3>Chácaras de 1.000 m²</h3>
+        <p>O tamanho ideal planejado para a sua família construir uma casa de campo espaçosa, com área de lazer e amplo contato com o verde.</p>
+      </article>
+      <article class="card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <h3>Localização Privilegiada</h3>
+        <p>Estrategicamente posicionado a apenas 7 km de Tiradentes e 13 km de São João del-Rei, unindo o sossego do campo ao acesso urbano.</p>
+      </article>
+      <article class="card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="7"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>
+        <h3>Infraestrutura Completa</h3>
+        <p>Vias de acesso planejadas, demarcação precisa de terrenos e rede estruturada para você começar a realizar seu projeto sem preocupações.</p>
+      </article>
+      <article class="card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 11l4-4 5 2 3-2 8 5"/><path d="M6 13l4 5a2 2 0 003 0l6-6M9 9l5 4"/><path d="M12 2v2M7 3l1 1.5M17 3l-1 1.5"/></svg>
+        <h3>Condições Facilitadas</h3>
+        <p>Oportunidade exclusiva de pré-lançamento com entrada facilitada e financiamento direto em até 120 meses sem burocracia.</p>
+      </article>
+      <article class="card">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/><path d="M5 21v-3M11 21v-5M17 21v-7"/></svg>
+        <h3>Alto Potencial de Valorização</h3>
+        <p>Região em crescimento imobiliário e turístico entre São João del-Rei e Tiradentes, com bom potencial de valorização no longo prazo.</p>
+      </article>
+    </div>
+    <div class="cta-centro"><a class="btn" href="#cadastro">Quero conhecer as condições</a></div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+  <div class="grid">
+    <div class="txt">
+      <h2>Sobre o <span>Ipês de Inhambu:</span></h2>
+      <p>O <b class="ouro">Ipês de Inhambu</b> nasce do desejo de proporcionar o equilíbrio perfeito entre <b>a vida no campo e a praticidade urbana</b>. Localizado no vetor de maior valorização da região, a apenas <b>7 km de Tiradentes</b> e <b>13 km de São João del-Rei</b>, o empreendimento oferece chácaras de 1.000 m² integradas à natureza e prontas para receber os seus melhores momentos.</p>
+      <a class="btn" href="#cadastro">Agendar minha visita</a>
+    </div>
+    <div class="foto" role="img" aria-label="Vista aérea do empreendimento"></div>
+  </div>
+</section>
+
+<!-- MAPA -->
+<section class="proj" id="projeto">
+  <div class="wrap">
+    <h2 class="display">Veja como vai ficar</h2>
+    <p class="intro">Uma simulação do loteamento com vias, lotes e áreas verdes. Imagem ilustrativa: o projeto final pode sofrer ajustes.</p>
+    <figure class="gif">
+      <img src="imagens/projeto.gif" alt="Animação mostrando como ficará o terreno do Ipês de Inhambu depois de pronto" loading="lazy" decoding="async" onerror="this.closest('figure').remove()">
+    </figure>
+  </div>
+</section>
+
+<section class="mapa" id="mapa">
+  <div class="wrap">
+    <h2 class="display">Mapa do projeto</h2>
+    <p class="intro" style="margin-top:-30px">Escolha o seu lote na planta e veja onde o empreendimento fica. Lotes de 1.000 m² pensados para dar privacidade, boa insolação e contato com as áreas verdes. Toque em um lote para ver os detalhes. O mapa de localização também pode ser ampliado.</p>
+    <div class="dois">
+      <figure class="planta">
+        <h3>Planta dos lotes</h3>
+        <div class="pl-topo">
+          <label class="pl-busca" for="plBusca">Ir para o lote
+            <input type="number" id="plBusca" min="1" max="89" inputmode="numeric" placeholder="1 a 89">
+            <span class="msg" id="plMsg" role="alert"></span>
+          </label>
+          <div class="pl-zoom" role="group" aria-label="Zoom da planta">
+            <button type="button" id="plMenos" aria-label="Diminuir zoom">−</button>
+            <button type="button" id="plMais" aria-label="Aumentar zoom">+</button>
+            <button type="button" id="plReset" aria-label="Voltar à visão geral" title="Visão geral" style="font-size:16px">⟲</button>
+          </div>
+        </div>
+        <div class="pl">
+          <div>
+            <div class="pl-vista" id="plVista">
+              <div class="pl-palco" id="plPalco">
+                <img src="imagens/mapa.png" width="2167" height="2166" alt="Planta de lotes do Ipês de Inhambu, com lotes numerados e áreas institucionais" loading="lazy" decoding="async">
+                <svg id="plSvg" viewBox="0 0 2167 2166" preserveAspectRatio="none" aria-label="Lotes clicáveis"></svg>
+              </div>
+            </div>
+            <div class="pl-dica" id="plDica"><span>Toque ou clique em um lote · arraste para mover · use + e − para aproximar</span></div>
+          </div>
+          <aside class="pl-info" id="plInfo" aria-live="polite"></aside>
+        </div>
+        <figcaption>Lotes numerados de 01 a 89 · imagem ilustrativa</figcaption>
+      </figure>
+      <figure>
+        <h3>Localização</h3>
+        <button class="zoom" type="button" aria-label="Ampliar mapa de localização"><img src="imagens/localizacao.png" alt="Mapa de localização do Ipês de Inhambu, a 7 km de Tiradentes e 13 km de São João del-Rei" loading="lazy" decoding="async" onerror="this.closest('figure').remove()"></button>
+        <figcaption>7 km de Tiradentes · 13 km de São João del-Rei</figcaption>
+      </figure>
+    </div>
+    <div class="cta-centro"><a class="btn" href="#cadastro">Escolher meu lote e agendar visita</a></div>
+  </div>
+</section>
+
+<dialog id="lb" aria-label="Mapa ampliado"><button class="x" type="button" aria-label="Fechar">×</button><img alt=""></dialog>
+
+<!-- FAMÍLIA + PRÉ-VENDA -->
+<div class="contatos" id="contatos">
+  <div class="familia">
+    <section class="caixa" id="cadastro" aria-labelledby="tCad">
+      <div>
+        <span class="tag">Pré-venda</span>
+        <h3 id="tCad">Cadastre-se e garanta o seu lote</h3>
+        <p>Deixe seus dados e nossa equipe entra em contato com as condições do pré-lançamento.</p>
+        <ul class="vantagens">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5 11-11"/></svg>Entrada facilitada e financiamento direto em até 120 meses</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5 11-11"/></svg>Escritura garantida em projeto 100% regularizado</li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5 11-11"/></svg>Visita ao empreendimento no dia que for melhor para você</li>
+        </ul>
+      </div>
+      <div>
+        <form class="cad" id="form" novalidate>
+          <label>Nome completo<input type="text" name="nome" autocomplete="name" placeholder="Nome e sobrenome" required></label>
+          <div class="duas">
+            <label>WhatsApp<input type="tel" id="tel" name="tel" autocomplete="tel" inputmode="tel" placeholder="(32) 90000-0000" required></label>
+            <label>E-mail (opcional)<input type="email" name="email" autocomplete="email" placeholder="voce@email.com"></label>
+          </div>
+          <div class="duas">
+            <label>Lote de interesse<select name="lote" id="selLote"><option>Ainda não escolhi</option></select></label>
+            <label>Quando quer visitar?
+              <select name="visita">
+                <option>Neste fim de semana</option>
+                <option>Na próxima semana</option>
+                <option selected>Ainda não sei</option>
+                <option>Quero só receber informações</option>
+              </select>
+            </label>
+          </div>
+          <label class="aceite"><input type="checkbox" name="aceite" required><span>Concordo em ser contatado pela equipe do Ipês de Inhambu e com a <a href="privacidade.html" target="_blank" rel="noopener">Política de Privacidade</a> e os <a href="termos.html" target="_blank" rel="noopener">Termos de Uso</a>.</span></label>
+          <p class="erro" id="erro" role="alert"></p>
+          <button class="btn" type="submit">Quero entrar na pré-venda</button>
+          <p class="micro">Seus dados são usados apenas para o contato sobre o empreendimento.</p>
+        </form>
+        <div class="cad ok" id="ok" role="status">
+          <h4 id="okTitulo">Cadastro quase pronto!</h4>
+          <p>Para concluir, envie a mensagem na conversa que abrimos para você.</p>
+          <a class="btn" id="reabrir" href="#" target="_blank" rel="noopener">Abrir conversa novamente</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<footer>
+  <span class="blob e" aria-hidden="true"></span><span class="blob d" aria-hidden="true"></span>
+  <div class="wrap">
+    <div>
+      <div class="marcas">
+        <img src="imagens/logo%20png.png" alt="Ipês de Inhambu">
+        <img src="imagens/m2.png" alt="m²" onerror="this.style.display='none'">
+      </div>
+      <a class="insta" href="https://instagram.com/ipesdeinhambu" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#c9a745"/></svg>
+        @ipesdeinhambu
+      </a>
+    </div>
+    <div>
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="mailto:ipesdeinhambu@gmail.com">ipesdeinhambu@gmail.com</a></li>
+        <li>Tiradentes, MG</li>
+      </ul>
+    </div>
+    <div class="legal"><a href="termos.html">Termos de uso</a><a href="privacidade.html">Política de Privacidade</a></div>
+  </div>
+</footer>
+
+<script>
+// ===== CONFIGURE AQUI: WhatsApp com DDI + DDD + número, só dígitos (ex.: 5532999999999) =====
+// Enquanto o número não for preenchido, o cadastro é enviado por e-mail.
+const WHATSAPP = "55XXXXXXXXXXX";
+const form = document.getElementById("form"), selLote = document.getElementById("selLote"), tel = document.getElementById("tel");
+for (let i = 1; i <= 89; i++) { const o = document.createElement("option"); o.textContent = "Lote " + String(i).padStart(2, "0"); selLote.append(o); }
+
+tel.addEventListener("input", () => {
+  const d = tel.value.replace(/\D/g, "").slice(0, 11);
+  tel.value = d.length > 10 ? `(${d.slice(0,2)}) ${d.slice(2,7)}-${d.slice(7)}`
+            : d.length > 6  ? `(${d.slice(0,2)}) ${d.slice(2,6)}-${d.slice(6)}`
+            : d.length > 2  ? `(${d.slice(0,2)}) ${d.slice(2)}` : d;
+});
+
+form.addEventListener("submit", e => {
+  e.preventDefault();
+  const f = new FormData(form), erro = document.getElementById("erro");
+  form.querySelectorAll("[aria-invalid]").forEach(c => c.removeAttribute("aria-invalid"));
+  const falha = (campo, msg) => { erro.textContent = msg; campo.setAttribute("aria-invalid", "true"); campo.focus(); };
+  const nome = f.get("nome").trim(), digitos = f.get("tel").replace(/\D/g, ""), email = f.get("email").trim();
+  if (nome.length < 3) return falha(form.elements.nome, "Informe seu nome completo.");
+  if (digitos.length < 10) return falha(tel, "Informe um WhatsApp válido, com DDD.");
+  if (email && !/^\S+@\S+\.\S+$/.test(email)) return falha(form.elements.email, "Confira o e-mail digitado.");
+  if (!f.get("aceite")) return falha(form.elements.aceite, "Marque a caixa de concordância para continuar.");
+  erro.textContent = "";
+  const linhas = ["Olá! Quero me cadastrar na pré-venda do Ipês de Inhambu.", "Nome: " + nome, "WhatsApp: " + f.get("tel")];
+  if (email) linhas.push("E-mail: " + email);
+  linhas.push("Lote de interesse: " + f.get("lote"), "Visita: " + f.get("visita"));
+  const texto = linhas.join("\n");
+  const porEmail = WHATSAPP.includes("X");
+  const url = porEmail
+    ? "mailto:ipesdeinhambu@gmail.com?subject=" + encodeURIComponent("Cadastro pré-venda") + "&body=" + encodeURIComponent(texto)
+    : "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(texto);
+  document.getElementById("okTitulo").textContent = "Obrigado, " + nome.split(" ")[0] + "!";
+  document.getElementById("reabrir").href = url;
+  form.style.display = "none"; const ok = document.getElementById("ok"); ok.style.display = "grid"; ok.tabIndex = -1; ok.focus();
+  if (porEmail) location.href = url; else window.open(url, "_blank", "noopener");
+});
+// Destaca no menu a seção visível
+const links = document.querySelectorAll("nav a");
+const obs = new IntersectionObserver(es => es.forEach(en => {
+  if(en.isIntersecting){ links.forEach(l => l.classList.toggle("ativo", l.getAttribute("href") === "#" + en.target.id)); }
+}), {rootMargin:"-40% 0px -55% 0px"});
+const lb = document.getElementById("lb"), lbImg = lb.querySelector("img");
+document.querySelectorAll(".zoom").forEach(b => b.addEventListener("click", () => {
+  const i = b.querySelector("img"); lbImg.src = i.src; lbImg.alt = i.alt; lb.showModal();
+}));
+lb.addEventListener("click", () => lb.close());
+["home","infraestrutura","sobre","projeto","mapa","cadastro"].forEach(id => { const s = document.getElementById(id); if(s) obs.observe(s); });
+
+// Cabeçalho fixo com fundo ao rolar
+const hd = document.querySelector("header");
+const rolou = () => hd.classList.toggle("rolou", scrollY > 40);
+addEventListener("scroll", rolou, {passive:true}); rolou();
+
+// Botão fixo no celular: aparece fora do hero e some quando o formulário está na tela
+const barra = document.getElementById("barra"); let noHero = true, noForm = false;
+const atualiza = () => barra.classList.toggle("ver", !noHero && !noForm);
+new IntersectionObserver(([e]) => { noHero = e.isIntersecting; atualiza(); }).observe(document.querySelector(".acoes"));
+new IntersectionObserver(([e]) => { noForm = e.isIntersecting; atualiza(); }).observe(document.getElementById("cadastro"));
+
+// Avisa no botão que o próximo passo é o WhatsApp
+if (!WHATSAPP.includes("X")) form.querySelector("button[type=submit]").textContent = "Continuar no WhatsApp";
+</script>
+
+<script>
+// ===== PLANTA INTERATIVA =====
+// Para marcar lotes, edite LOTES. Status: "disponivel" (padrão), "reservado" ou "vendido".
+// Também dá para definir a área de cada lote. Exemplo:
+//   const LOTES = { "05": { status: "vendido" }, "12": { status: "reservado", area: 1150 } };
+const AREA_PADRAO = 1000; // m² exibidos quando o lote não tem "area" própria
+const LOTES = {};
+
+const PLANTA = {"I1":"1925,369 1911,369 1660,494 1612,522 1612,537 1790,773 1807,770 1907,693 1918,673 1938,669 2005,618 1997,569 1942,380","I2":"309,1269 186,1364 183,1382 304,1585 408,1796 418,1804 439,1808 594,1805 597,1630 591,1617 523,1527 509,1526 490,1536 472,1526 469,1511 487,1493 487,1479 330,1271","1":"2005,584 2001,584 2006,602 2006,617 1938,670 1918,674 1907,694 1807,771 1788,775 1824,825 1832,823 2024,676","2":"2024,679 1827,827 1849,859 1846,865 1833,866 1837,878 1849,879 1880,866 1903,865 1947,821 1954,818 2030,817","3":"2077,878 2072,876 2071,862 2062,855 2057,842 2061,826 2059,815 2043,817 2041,826 2046,836 2039,842 2031,836 2032,825 2028,819 1953,819 1903,866 1879,867 1845,881 1844,889 1845,896 1855,901 1864,887 1875,892 1902,929 1896,936 1883,932 1886,947 1899,946 1898,940 1904,935 1912,942 1962,909 1977,894 2031,893 2033,880 2039,875 2044,878 2045,885 2056,889 2061,897 2048,913 2049,919 2059,923 2063,932 2063,879 2068,875 2075,882","4":"1979,894 1915,943 1942,981 1939,988 1925,990 1926,1001 1935,1006 1938,1019 1948,1023 1950,1011 1946,1003 1955,999 1990,1045 1987,1051 1973,1050 1980,1075 1989,1079 1993,1077 1995,1066 1987,1061 1993,1053 2023,1088 2032,1090 2039,1087 2037,989 2046,985 2057,1002 2065,1006 2069,1003 2069,995 2077,993 2074,988 2076,979 2068,972 2064,961 2053,961 2042,969 2037,966 2034,895","5":"2052,1492 1917,1595 1906,1598 1905,1604 1896,1612 1910,1623 2031,1784 2041,1792 2051,1788 2054,1773 2058,1615","6":"2007,1436 1993,1442 1849,1554 1860,1558 1876,1578 1879,1598 1890,1615 1894,1615 1907,1598 1913,1597 2049,1493","7":"1961,1376 1954,1378 1818,1480 1810,1478 1802,1485 1802,1491 1813,1496 1834,1522 1836,1531 1833,1537 1838,1546 1851,1551 1853,1544 1863,1541 2003,1434","8":"1917,1317 1908,1319 1763,1430 1793,1468 1795,1480 1804,1483 1811,1477 1823,1477 1958,1374","9":"1872,1257 1857,1264 1732,1359 1729,1367 1721,1371 1720,1377 1728,1382 1747,1407 1747,1420 1754,1430 1762,1430 1765,1422 1775,1420 1913,1315","10":"1826,1197 1722,1274 1656,1277 1651,1302 1659,1306 1663,1318 1685,1325 1698,1343 1699,1362 1712,1378 1719,1378 1732,1358 1869,1255","11":"1781,1138 1770,1143 1633,1248 1621,1252 1625,1257 1632,1256 1647,1276 1650,1291 1642,1298 1644,1301 1650,1301 1650,1290 1657,1275 1720,1274 1823,1196","12":"1736,1078 1692,1109 1680,1111 1633,1154 1558,1156 1563,1166 1564,1184 1575,1192 1578,1211 1591,1232 1595,1234 1600,1228 1606,1228 1610,1238 1628,1250 1768,1144 1768,1134 1758,1123 1762,1112","13":"1733,1073 1688,1018 1555,1120 1526,1122 1524,1125 1534,1138 1548,1145 1556,1154 1631,1154 1680,1110 1695,1106 1729,1080","14":"1660,955 1639,952 1625,972 1604,989 1585,993 1577,1001 1574,1011 1516,1055 1488,1071 1489,1086 1505,1089 1520,1107 1520,1122 1555,1119 1688,1017 1664,982","15":"1639,949 1617,935 1536,938 1491,981 1436,982 1426,995 1437,1017 1447,1024 1456,1023 1467,1037 1466,1049 1471,1067 1488,1070 1516,1054 1574,1010 1577,1000 1585,992 1604,988 1624,972","16":"1631,940 1594,890 1565,888 1543,866 1524,862 1501,879 1488,882 1452,918 1380,920 1384,928 1381,948 1389,953 1392,962 1413,967 1430,986 1437,981 1489,981 1537,937 1616,934 1629,943","17":"1541,847 1504,815 1453,815 1443,823 1438,833 1408,858 1337,859 1335,862 1342,872 1341,890 1351,900 1366,904 1378,918 1450,918 1488,881 1501,878 1520,863 1541,863","18":"1492,755 1464,719 1398,769 1392,769 1382,758 1374,759 1331,802 1311,835 1311,850 1333,858 1406,858 1438,832 1451,815 1505,813 1505,808 1495,797 1500,777 1488,764","19":"1314,665 1242,700 1230,715 1236,732 1285,796 1286,801 1282,805 1286,811 1285,822 1307,827 1317,825 1330,802 1374,758 1381,756 1352,715 1350,704 1336,693","20":"1424,610 1317,663 1337,693 1350,703 1351,712 1394,769 1490,698","21":"1648,639 1640,634 1628,617 1634,604 1631,590 1616,575 1608,577 1599,569 1591,568 1568,543 1550,546 1427,608 1474,671 1517,671 1527,665 1545,644 1571,638 1580,642 1646,642","22":"1665,646 1651,637 1644,643 1580,643 1570,639 1545,645 1519,671 1475,673 1490,697 1467,717 1467,721 1492,754 1488,764 1501,780 1510,778 1632,684 1638,684 1648,695 1684,694 1670,673 1672,662","23":"1707,707 1687,696 1646,695 1637,682 1496,789 1496,798 1505,807 1506,815 1535,844 1543,845 1587,815 1624,779 1634,777 1690,733 1712,731 1712,717","24":"1761,764 1747,750 1731,753 1714,733 1692,733 1634,778 1624,780 1587,816 1542,848 1542,864 1565,887 1591,888 1601,895 1733,795 1749,796 1768,784","25":"1761,794 1748,797 1734,795 1601,896 1640,949 1660,950 1701,912 1778,854 1778,829 1784,820","26":"1886,948 1880,929 1865,930 1857,921 1856,902 1845,897 1833,897 1831,890 1835,875 1831,864 1809,858 1803,849 1805,841 1798,835 1799,829 1787,819 1779,827 1778,855 1690,922 1660,954 1683,974 1716,974 1728,986 1775,952 1785,956 1883,956","27":"1883,958 1785,957 1775,952 1728,986 1717,975 1684,975 1666,963 1665,983 1736,1074 1792,1021 1805,1022 1855,983 1878,981","28":"1903,961 1886,955 1878,982 1857,983 1805,1023 1792,1022 1736,1075 1762,1111 1758,1123 1768,1133 1769,1140 1774,1140 1823,1105 1903,1042 1922,1023 1919,1011 1925,1003 1924,991 1908,987 1898,975","29":"1952,1025 1940,1021 1922,1024 1903,1043 1782,1135 1823,1192 1831,1190 1941,1106 1961,1103 1974,1077 1975,1065 1970,1044 1955,1041 1956,1030","30":"1992,1081 1981,1076 1975,1078 1960,1105 1941,1107 1827,1194 1855,1234 1898,1235 1993,1160 2027,1159 2033,1154 2029,1148 2032,1131 2018,1113 1998,1108 1990,1095","31":"2035,1158 1993,1161 1906,1227 1900,1235 1859,1237 1923,1324 1929,1323 2045,1235 2043,1180","32":"2043,1238 1928,1324 1927,1329 2052,1491 2046,1244","33":"1871,1626 1816,1668 1806,1692 1825,1712 1847,1717 1855,1733 1886,1760 1889,1778 1896,1789 1893,1806 1947,1807 1950,1815 1942,1821 1941,1835 1970,1836 1971,1829 1954,1814 1954,1808 1959,1805 1991,1805 1997,1799 1997,1791 1905,1665","34":"1582,1574 1582,1589 1576,1596 1576,1651 1556,1672 1556,1684 1582,1702 1599,1705 1613,1701 1641,1703 1658,1698 1669,1688 1660,1661 1594,1574","35":"1573,1596 1539,1596 1470,1647 1413,1648 1427,1680 1443,1689 1466,1719 1472,1735 1482,1741 1531,1803 1549,1780 1566,1774 1577,1764 1586,1737 1586,1719 1580,1702 1555,1683 1556,1671 1575,1652","36":"1550,1498 1530,1497 1507,1512 1504,1528 1387,1617 1409,1645 1471,1646 1537,1596 1575,1595 1581,1590 1581,1572 1566,1556 1573,1546 1556,1522","37":"1496,1436 1492,1436 1492,1442 1486,1449 1402,1512 1389,1507 1307,1507 1324,1533 1322,1544 1332,1559 1357,1575 1383,1614 1396,1610 1506,1524 1507,1511 1528,1497 1517,1471 1498,1447","38":"1495,1415 1475,1389 1457,1375 1399,1420 1374,1449 1362,1448 1302,1494 1303,1505 1388,1506 1400,1512 1491,1444","39":"1429,1331 1409,1324 1369,1330 1354,1342 1347,1359 1335,1374 1330,1403 1315,1404 1297,1395 1283,1395 1237,1417 1243,1430 1253,1437 1281,1474 1284,1486 1294,1501 1302,1503 1308,1488 1361,1448 1374,1448 1399,1419 1455,1375 1448,1353","40":"1229,1092 1217,1090 1115,1168 1068,1169 1056,1180 1056,1185 1084,1214 1111,1250 1112,1263 1130,1261 1156,1248 1171,1234 1195,1224 1206,1214 1220,1187 1240,1184 1265,1167 1265,1139 1258,1129 1258,1122","41":"1228,1080 1213,1069 1197,1050 1143,1050 1055,1120 1041,1127 1029,1139 1026,1154 1039,1156 1056,1178 1069,1168 1113,1168 1217,1089 1228,1089","42":"1088,907 1078,914 1077,995 1067,1007 1066,1017 978,1082 998,1100 1003,1108 1007,1133 1019,1141 1055,1119 1141,1050 1195,1048 1156,994 1146,991 1124,972 1123,952 1108,937 1107,929","43":"1076,941 1026,940 1019,944 999,945 992,952 991,980 951,1010 948,1016 935,1022 960,1050 962,1065 972,1074 973,1082 996,1070 1066,1016 1066,1008 1076,995","44":"941,852 868,887 855,901 857,914 917,993 919,1007 933,1022 941,1011 952,1009 991,979 991,953 999,944 994,920","45":"1035,805 943,850 994,919 1002,943 1020,943 1027,939 1075,939 1078,914 1110,889 1110,880","46":"1198,734 1192,731 1174,734 1037,805 1110,879 1113,886 1240,791","47":"1243,793 1235,795 1091,904 1107,928 1108,936 1123,951 1144,957 1206,910 1221,894 1281,893 1285,882 1307,880","48":"1282,895 1223,894 1206,911 1144,958 1124,954 1124,972 1146,990 1155,992 1180,1023 1282,944","49":"1311,883 1284,883 1282,945 1181,1023 1200,1051 1266,1052 1375,969","50":"1420,1027 1376,970 1268,1052 1206,1053 1204,1057 1228,1079 1229,1091 1241,1103 1321,1103","51":"1465,1087 1421,1030 1327,1102 1246,1104 1244,1107 1259,1123 1259,1130 1266,1140 1266,1168 1270,1169 1291,1156 1366,1156 1391,1132 1405,1135","52":"1468,1091 1405,1136 1392,1132 1368,1156 1290,1157 1270,1170 1288,1196 1305,1210 1326,1251 1350,1273 1369,1278 1389,1271 1404,1248 1419,1242 1433,1229 1451,1198 1454,1177 1479,1184 1526,1167","53":"1690,1384 1641,1316 1615,1329 1604,1341 1587,1348 1566,1375 1560,1392 1543,1390 1530,1393 1498,1415 1497,1444 1505,1453 1597,1453 1608,1448 1618,1433 1630,1432","54":"1761,1480 1714,1416 1712,1408 1691,1387 1630,1433 1618,1434 1609,1448 1599,1453 1507,1455 1529,1495 1550,1497 1575,1513 1632,1513 1668,1481","55":"1553,1503 1558,1525 1572,1544 1567,1557 1581,1571 1594,1573 1601,1581 1663,1579 1699,1547 1808,1543 1763,1482 1667,1482 1631,1514 1576,1514","56":"1812,1546 1719,1545 1698,1548 1665,1579 1605,1580 1603,1584 1661,1661 1671,1693 1686,1711 1702,1691 1702,1660 1709,1653 1710,1636 1742,1604 1759,1603 1766,1610 1825,1566","57":"1828,1567 1771,1608 1761,1604 1742,1605 1710,1637 1710,1652 1703,1659 1703,1691 1687,1711 1689,1719 1700,1731 1721,1739 1735,1739 1778,1719 1805,1690 1815,1668 1870,1626","58":"1254,1624 1390,1807 1479,1806 1482,1794 1451,1748 1320,1578 1310,1581","59":"1180,1680 1273,1807 1388,1807 1254,1628 1248,1628","60":"1271,1807 1177,1683 1018,1803 1030,1809","61":"1121,1632 1116,1632 988,1730 978,1731 977,1737 965,1748 967,1753 974,1754 1013,1802 1018,1802 1164,1691","62":"1064,1569 1056,1572 1046,1592 937,1674 935,1682 924,1684 949,1719 957,1738 964,1743 972,1741 979,1731 988,1729 1118,1630 1086,1585","63":"1031,1513 1025,1513 987,1543 973,1543 964,1552 961,1563 894,1612 886,1623 879,1624 907,1664 908,1671 916,1676 917,1683 926,1681 927,1670 940,1671 1047,1590 1059,1564 1051,1539","64":"986,1453 978,1455 871,1538 851,1540 829,1557 823,1572 832,1580 843,1580 873,1621 879,1623 884,1620 887,1612 899,1609 961,1562 964,1551 973,1542 987,1542 1028,1510","65":"984,1422 975,1413 954,1431 888,1430 847,1460 833,1447 772,1447 750,1428 734,1436 732,1444 741,1445 763,1473 763,1490 780,1504 780,1512 794,1515 803,1526 807,1551 828,1557 849,1540 871,1537 983,1451","66":"974,1410 948,1390 939,1363 919,1337 907,1326 890,1321 873,1326 858,1342 830,1358 814,1375 808,1396 790,1396 774,1402 752,1428 771,1446 832,1446 845,1461 886,1430 955,1430","67":"716,1096 710,1096 564,1207 611,1277 617,1277 648,1241 663,1240 684,1229 695,1217 701,1199 734,1191 756,1176 756,1149","68":"566,1039 491,1075 480,1087 483,1104 562,1207 644,1145","69":"667,988 568,1037 646,1142 739,1073 704,1023","70":"821,920 802,920 670,986 705,1023 739,1069 746,1068 774,1047 775,1036 794,1017 892,1015","71":"896,1018 796,1017 775,1037 775,1045 716,1092 757,1149 757,1178 771,1207 775,1207 792,1190 792,1135 797,1124 909,1038","72":"913,1040 907,1040 797,1125 793,1135 793,1189 775,1208 776,1212 800,1219 857,1171 879,1160 882,1143 906,1135 954,1098","73":"1011,1166 1002,1159 959,1101 954,1099 906,1136 880,1145 879,1161 856,1173 820,1200 800,1220 800,1224 815,1241 844,1252 858,1249 873,1239 914,1238 948,1221 959,1209 964,1194 986,1189","74":"1121,1318 1096,1333 1048,1374 1041,1401 1010,1407 985,1421 985,1451 1030,1508 1180,1395 1151,1351","75":"1183,1397 1176,1399 1031,1509 1052,1539 1060,1565 1085,1557 1088,1549 1103,1548 1225,1455 1213,1433","76":"1228,1456 1099,1551 1095,1561 1084,1558 1065,1566 1068,1572 1087,1585 1118,1627 1270,1515","77":"1273,1516 1266,1518 1121,1629 1164,1688 1177,1682 1316,1576","78":"826,1622 826,1809 962,1808 967,1796 947,1765 932,1750 915,1723 837,1623","79":"811,1591 801,1597 793,1595 751,1604 754,1810 825,1809 825,1624 832,1617","80":"674,1605 677,1810 749,1810 750,1604 724,1601","81":"673,1605 637,1603 608,1607 593,1618 598,1630 596,1803 591,1807 533,1807 531,1810 676,1810","82":"704,1443 700,1443 689,1458 679,1459 548,1558 591,1615 609,1606 640,1601 660,1584 668,1564 695,1559 753,1514","83":"699,1441 695,1438 683,1441 677,1438 598,1438 588,1435 504,1499 487,1502 487,1510 501,1515 503,1528 523,1526 549,1557 684,1455 685,1445","84":"700,1435 693,1421 683,1419 661,1391 660,1378 645,1360 631,1355 590,1355 580,1348 503,1406 435,1408 488,1480 488,1492 473,1504 470,1519 479,1532 490,1535 502,1531 501,1516 488,1511 487,1502 504,1498 586,1435 698,1438","85":"631,1351 618,1334 614,1314 606,1309 604,1299 589,1295 584,1290 533,1290 484,1326 468,1345 456,1347 414,1382 436,1406 501,1406 576,1349 583,1349 589,1354 629,1354","86":"523,1208 519,1208 518,1217 503,1218 368,1320 411,1378 456,1346 468,1344 484,1325 529,1291 582,1288 562,1246 551,1244","87":"471,1117 432,1106 405,1119 403,1189 386,1206 382,1217 319,1264 331,1271 365,1317 372,1317 520,1203 513,1187 499,1177 484,1157 487,1138","88":"403,1122 241,1201 296,1276 323,1261 382,1216 386,1205 403,1188","89":"238,1202 125,1258 112,1272 116,1288 174,1371 296,1279"};
+
+(function(){
+  const NS = "http://www.w3.org/2000/svg", VB = 2167;
+  const vista = document.getElementById("plVista"), palco = document.getElementById("plPalco"), svg = document.getElementById("plSvg");
+  const info = document.getElementById("plInfo"), busca = document.getElementById("plBusca"), msg = document.getElementById("plMsg");
+  const bMais = document.getElementById("plMais"), bMenos = document.getElementById("plMenos"), bReset = document.getElementById("plReset");
+  const pad = n => String(n).padStart(2, "0");
+  const nomeDe = id => id[0] === "I" ? "Área Institucional " + pad(id.slice(1)) : "Lote " + pad(id);
+  const statusDe = id => (LOTES[pad(id)] && LOTES[pad(id)].status) || (LOTES[id] && LOTES[id].status) || "disponivel";
+  const areaDe = id => (LOTES[pad(id)] && LOTES[pad(id)].area) || (LOTES[id] && LOTES[id].area) || AREA_PADRAO;
+  const rotulos = { disponivel: "Disponível", reservado: "Reservado", vendido: "Vendido" };
+  let atual = null;
+
+  // --- desenha os polígonos ---
+  Object.keys(PLANTA).forEach(id => {
+    const g = document.createElementNS(NS, "g"), p = document.createElementNS(NS, "polygon");
+    const inst = id[0] === "I", st = inst ? "" : statusDe(id);
+    g.setAttribute("class", "lote " + (inst ? "inst" : st));
+    g.dataset.id = id; g.setAttribute("tabindex", "0"); g.setAttribute("role", "button");
+    g.setAttribute("aria-label", nomeDe(id) + (inst ? "" : ", " + rotulos[st].toLowerCase()));
+    p.setAttribute("points", PLANTA[id]); g.append(p); svg.append(g);
+  });
+
+  // legenda: só mostra reservado/vendido se existirem
+  const dica = document.getElementById("plDica");
+  const usados = new Set(Object.keys(PLANTA).filter(i => i[0] !== "I").map(statusDe));
+  ["disponivel", "reservado", "vendido"].filter(s => s === "disponivel" || usados.has(s)).forEach(s => {
+    const l = document.createElement("span"); l.className = "pl-leg " + s; l.innerHTML = "<i></i>" + rotulos[s]; dica.append(l);
+  });
+
+  // --- painel de informações ---
+  function painelVazio(){
+    info.innerHTML = '<div class="vazio"><b>Escolha o seu lote</b>Toque em qualquer lote da planta para ver os detalhes, ou digite o número acima. Depois é só pedir para visitá-lo.</div>';
+  }
+  function painel(id){
+    const inst = id[0] === "I";
+    if (inst){
+      info.innerHTML = '<div class="eyebrow">Área reservada</div><div class="num pequeno">' + nomeDe(id) + '</div>' +
+        '<p>Área institucional do loteamento. Não é um lote à venda.</p>' +
+        '<div class="acoes-lote"><button class="btn sec" type="button" data-acao="limpar">Voltar à planta</button></div>';
+      return;
+    }
+    const st = statusDe(id), livre = st === "disponivel";
+    const txt = livre ? "Chácara de " + areaDe(id).toLocaleString("pt-BR") + " m² para a sua família construir com privacidade e contato com o verde. Fale com a nossa equipe para conhecer o lote pessoalmente."
+              : st === "reservado" ? "Este lote está reservado. Cadastre-se e a nossa equipe indica alternativas parecidas."
+              : "Este lote já foi vendido. Cadastre-se e a nossa equipe indica lotes parecidos que ainda estão disponíveis.";
+    info.innerHTML = '<div class="eyebrow">Lote</div><div class="num">' + pad(id) + '</div>' +
+      '<div class="chips"><span class="chip ' + (livre ? "ok" : st) + '">' + rotulos[st] + '</span><span class="chip">' + areaDe(id).toLocaleString("pt-BR") + ' m²</span></div>' +
+      '<p>' + txt + '</p>' +
+      '<div class="acoes-lote"><button class="btn" type="button" data-acao="quero"' + (livre ? "" : " disabled") + '>Quero este lote</button>' +
+      '<button class="btn sec" type="button" data-acao="agendar">' + (livre ? "Agendar visita" : "Ver lotes parecidos") + '</button></div>';
+  }
+
+  // --- seleção ---
+  function seleciona(id, focar){
+    svg.querySelectorAll(".sel").forEach(e => e.classList.remove("sel"));
+    atual = id;
+    if (id === null){ painelVazio(); return; }
+    const g = svg.querySelector('[data-id="' + id + '"]'); g.classList.add("sel"); svg.append(g); // traz para frente
+    painel(id);
+    if (focar) aproximaDe(g);
+  }
+  info.addEventListener("click", e => {
+    const b = e.target.closest("[data-acao]"); if (!b || b.disabled) return;
+    const a = b.dataset.acao;
+    if (a === "limpar"){ seleciona(null); reseta(); return; }
+    if (a === "quero" && atual){
+      const sel = document.getElementById("selLote"); if (sel) sel.value = "Lote " + pad(atual);
+    }
+    document.getElementById("cadastro").scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => { const n = document.querySelector('#form [name=nome]'); if (n && n.offsetParent) n.focus({ preventScroll: true }); }, 700);
+  });
+
+  // --- zoom e arraste ---
+  let s = 1, tx = 0, ty = 0, movido = false;
+  const MAX = 4;
+  function aplica(){
+    const w = vista.clientWidth, h = vista.clientHeight;
+    tx = Math.min(0, Math.max(w - w * s, tx)); ty = Math.min(0, Math.max(h - h * s, ty));
+    palco.style.transform = "translate(" + tx + "px," + ty + "px) scale(" + s + ")";
+    vista.classList.toggle("zoomed", s > 1.01);
+    bMenos.disabled = s <= 1.01; bMais.disabled = s >= MAX - 0.01;
+  }
+  function zoomPara(ns, cx, cy){
+    ns = Math.min(MAX, Math.max(1, ns));
+    if (cx === undefined){ cx = vista.clientWidth / 2; cy = vista.clientHeight / 2; }
+    tx = cx - (cx - tx) * (ns / s); ty = cy - (cy - ty) * (ns / s); s = ns; aplica();
+  }
+  function reseta(){ s = 1; tx = 0; ty = 0; aplica(); }
+  function aproximaDe(g){
+    const b = g.getBBox(), k = vista.clientWidth / VB, ns = 2.4;
+    const cx = (b.x + b.width / 2) * k, cy = (b.y + b.height / 2) * k;
+    s = ns; tx = vista.clientWidth / 2 - cx * ns; ty = vista.clientHeight / 2 - cy * ns; aplica();
+  }
+  bMais.addEventListener("click", () => zoomPara(s * 1.5));
+  bMenos.addEventListener("click", () => zoomPara(s / 1.5));
+  bReset.addEventListener("click", () => { seleciona(null); reseta(); });
+  vista.addEventListener("wheel", e => {
+    if (!(e.ctrlKey || e.metaKey)) return;
+    e.preventDefault(); const r = vista.getBoundingClientRect();
+    zoomPara(s * (e.deltaY < 0 ? 1.2 : 1 / 1.2), e.clientX - r.left, e.clientY - r.top);
+  }, { passive: false });
+
+  const ptrs = new Map(); let ini = null, dist0 = 0, s0 = 1;
+  vista.addEventListener("pointerdown", e => {
+    ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY }); movido = false;
+    if (ptrs.size === 1) ini = { x: e.clientX, y: e.clientY, tx, ty };
+    if (ptrs.size === 2){ const [a, b] = [...ptrs.values()]; dist0 = Math.hypot(a.x - b.x, a.y - b.y); s0 = s; }
+  });
+  vista.addEventListener("pointermove", e => {
+    if (!ptrs.has(e.pointerId)) return; ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (ptrs.size === 2){
+      const [a, b] = [...ptrs.values()], r = vista.getBoundingClientRect();
+      movido = true; zoomPara(s0 * Math.hypot(a.x - b.x, a.y - b.y) / dist0, (a.x + b.x) / 2 - r.left, (a.y + b.y) / 2 - r.top); return;
+    }
+    if (s > 1.01 && ini){
+      const dx = e.clientX - ini.x, dy = e.clientY - ini.y;
+      if (!movido && Math.hypot(dx, dy) > 6){ movido = true; vista.classList.add("arrasta"); try{ vista.setPointerCapture(e.pointerId); }catch(_){} }
+      if (movido){ tx = ini.tx + dx; ty = ini.ty + dy; aplica(); }
+    }
+  });
+  const solta = e => { ptrs.delete(e.pointerId); vista.classList.remove("arrasta"); if (ptrs.size === 1){ const p = [...ptrs.values()][0]; ini = { x: p.x, y: p.y, tx, ty }; } if (!ptrs.size) ini = null; };
+  vista.addEventListener("pointerup", solta); vista.addEventListener("pointercancel", solta);
+
+  // clique / teclado nos lotes
+  svg.addEventListener("click", e => {
+    if (movido){ movido = false; return; }
+    const g = e.target.closest(".lote"); if (g) seleciona(g.dataset.id === atual ? atual : g.dataset.id);
+  });
+  svg.addEventListener("keydown", e => {
+    if (e.key !== "Enter" && e.key !== " ") return;
+    const g = e.target.closest(".lote"); if (g){ e.preventDefault(); seleciona(g.dataset.id); }
+  });
+  vista.addEventListener("dblclick", e => { if (!e.target.closest(".lote")){ const r = vista.getBoundingClientRect(); zoomPara(s * 1.8, e.clientX - r.left, e.clientY - r.top); } });
+
+  // busca por número
+  function vai(){
+    const n = parseInt(busca.value, 10); msg.textContent = "";
+    if (!busca.value) return;
+    if (!(n >= 1 && n <= 89)){ msg.textContent = "Digite de 1 a 89."; return; }
+    seleciona(String(n), true);
+  }
+  busca.addEventListener("keydown", e => { if (e.key === "Enter"){ e.preventDefault(); vai(); } });
+  busca.addEventListener("change", vai);
+  addEventListener("resize", aplica);
+
+  painelVazio(); aplica();
+})();
+</script>
+</body>
+</html>
