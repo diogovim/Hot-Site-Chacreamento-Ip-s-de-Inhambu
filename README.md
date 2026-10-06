@@ -1,2 +1,2 @@
-# LandingPages
-Repositor focado em projetos de Hot Sites e Landing Pages, focados em conversão
+# Hot Site - Chacreamento Ipês de Inhambu
+Landing Page focada em conversão, utilizada de forma sazonal em uma campanha de pré vendas de lotes.
